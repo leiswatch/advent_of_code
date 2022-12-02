@@ -24,7 +24,7 @@ func Day1() (int, int) {
 		panic(err)
 	}
 
-	result := make([]int, 0, 10)
+	result := make([]int, 0)
 	temp := 0
 
 	for _, s := range strings.Split(string(input), "\n") {
