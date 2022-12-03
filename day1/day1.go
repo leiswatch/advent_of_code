@@ -1,4 +1,4 @@
-package day1
+package main
 
 import (
 	"fmt"
@@ -16,7 +16,7 @@ func sum(array []int) int {
 	return result
 }
 
-func Day1() (int, int) {
+func main() {
 	fmt.Println("Day 1!")
 
 	input, err := os.ReadFile("../day1/input.txt")
@@ -46,5 +46,5 @@ func Day1() (int, int) {
 
 	sumOf3 := sum([]int{result[len(result)-1], result[len(result)-2], result[len(result)-3]})
 
-	return result[len(result)-1], sumOf3
+	fmt.Println(result[len(result)-1], sumOf3)
 }
