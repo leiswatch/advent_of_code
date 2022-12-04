@@ -19,7 +19,7 @@ func sum(array []int) int {
 func main() {
 	fmt.Println("Day 1!")
 
-	input, err := os.ReadFile("../day1/input.txt")
+	input, err := os.ReadFile("./input.txt")
 	if err != nil {
 		panic(err)
 	}
